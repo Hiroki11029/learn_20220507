@@ -5,7 +5,7 @@ using UnityEngine;
 public class learn521 : MonoBehaviour
 {
     [SerializeField]
-    private int count;
+    private float BallSpeed;
 
     [SerializeField]
     private Rigidbody rigidBody;
@@ -27,7 +27,8 @@ public class learn521 : MonoBehaviour
         //スペースを押したらバウンド止まる
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+            // rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+            rigidBody.velocity = Vector3.up * ballSpeed;
         }
     }
 }

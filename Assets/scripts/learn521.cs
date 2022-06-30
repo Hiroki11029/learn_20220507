@@ -28,7 +28,7 @@ public class learn521 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // rigidBody.constraints = RigidbodyConstraints.FreezeAll;
-            rigidBody.velocity = Vector3.up * ballSpeed;
+            rigidBody.velocity = Vector3.up ;
         }
     }
 }
